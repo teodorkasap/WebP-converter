@@ -10,7 +10,6 @@ def define_folder():
     folder = current_folder + "/" + folder_to_convert
     return folder
 
-
 def define_format():
     format = input("Enter format to convert WebP files to: ")
     return format
@@ -37,7 +36,6 @@ def make_folder(path):
         os.mkdir(path)
         return path
 
-
 def convert_webp():
     path = define_folder()
     file_extension = define_format()
@@ -52,4 +50,5 @@ def convert_webp():
         print("command to be excecuted:\n",command)
         os.system(command)
 
-
+if __name__ == '__main__':
+    convert_webp()
